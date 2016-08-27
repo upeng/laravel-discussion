@@ -1,0 +1,28 @@
+.navbar{
+	margin-bottom: 0;
+}
+
+.comment-list{
+	margin-bottom: 30px;
+	clear:both;
+}
+.comment-list .comment-content{
+	float:left;
+}
+.comment-list .comment-content .comment-time{
+	clear:both;
+	color:red;
+}
+.comment-content strong{
+	font-size: 20px;
+}
+
+.comment-list .avatar{
+	padding-right: 15px;
+}
+
+.jumbotron{
+	background: #a9da5e;
+}
+ 
+ 

@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@index');
+
+Route::resource('discussions', 'PostController');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
+
+Route::resource('comments', 'CommentController');
+Route::post('/post/upload', 'PostController@upload');
+
+Route::get('/avatar', 'PostController@avatar');
+Route::post('/avatar', 'PostController@changeAvatar');
